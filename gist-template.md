@@ -2,11 +2,11 @@
 
 In this tutorial, we will explore the regular expression used to match an email address. Regular expressions are tools for pattern matching in strings. They allow you to define specific search patterns and validate input. Understanding how regex works and how to break down each component of an expression is essential for web development.
 
-The focus of this tutorial is on matching an email address: `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`. This expression is comprised of dfifferent components that can be broken down to explain their functionality. Lets go! 
+The focus of this tutorial is on matching an email address: `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`. This expression is comprised of different components that can be broken down to explain their functionality. Lets go! 
 
 ## Summary
 
-The regex `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/` is used to match an email address. It validates wheter a string represents a valid email address. 
+The regex `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/` is used to match an email address. It validates whether a string represents a valid email address. 
 
 Following is a list describing each component of this regex for better understanding.
 
@@ -36,8 +36,8 @@ Together, these anchors ensure that the entire string is matched from start to e
 
 Quantifiers define the number of times a character or group can occur. In the email validation regex, we use the following quantifiers:
 
-- `+`(plus sign): Matches one or more occurences of the preceding element. It allows the local and domain parts of the email address to have one or more valid characters.
-- `{2,6}` Matches the preceding elemnt between 2 and 6 times (both inclusive). It specifies the length range of the top-level domain (TLD) part of the email address.
+- `+`(plus sign): Matches one or more occurrence of the preceding element. It allows the local and domain parts of the email address to have one or more valid characters.
+- `{2,6}` Matches the preceding element between 2 and 6 times (both inclusive). It specifies the length range of the top-level domain (TLD) part of the email address.
 
 These quantifiers ensure that the username and domain parts of the email address have the required number of characters.
 
